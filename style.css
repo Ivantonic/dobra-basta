@@ -1,0 +1,299 @@
+/*0.0-base
+  0.1-header
+  0.2-content
+  0.3-form*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  
+    font-family: 'Lemonada', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin:0px;
+}
+
+/*0.1-header*/
+
+ul {
+    /*background-color:#2acd35;*/
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color:#000;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    vertical-align: middle;
+    height:50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom:1px solid white;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    z-index: 10;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color:rgb(132, 194, 95);
+    transition: all 0.2s ease-in-out;
+}
+
+.current-page {
+    color:rgb(132, 194, 95);
+}
+
+.clearfix {
+    clear:both;
+}
+
+.nav-list {
+    display:inline-block;
+    color:white;
+    /*margin:0 20px;*/
+    margin-top:10px;
+    padding: 6px 25px;
+    font-size:13px;
+}
+
+.nav-list:nth-child(-n+4) {
+    border-right:solid 1px;
+    border-color:white;
+}
+
+.sub-nav-image-div {
+    position:relative;
+}
+
+.grass {
+    background: url(images/grass.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    position:relative;
+    width:100%;
+    height:375px;
+    margin-top:-10px;
+    z-index: -1;
+}
+
+.grass-header {
+    font-family: 'Lemonada', cursive;
+    position:absolute;
+    right:50%;
+    top:50%;
+    color:white;
+    transform: translate(50px, -60px);
+}
+
+/*0.2-content*/
+
+.content {
+    text-align:center;
+}
+
+.logo-space {
+    position:absolute;
+    width:120px;
+    height:100px;
+    background-color:white;
+    border-radius:50%;
+    display:inline-block;
+    transform: translate(-58px, -55px);
+}
+
+.logo {
+    position:absolute;
+    display:inline-block;
+    background: url(images/logo.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    width:190%;
+    height:190%;
+    transform: translate(-118px, -16px);
+}
+
+.container {
+    display:inline-block;
+    position:relative;
+    width:70%;
+}
+
+.row {
+    margin:50px 0px;
+}
+
+.intro {
+    margin-top: 90px;
+    margin-bottom: 65px;
+}
+
+.sub-header {
+    margin-bottom:56px;
+    font-size:28px;
+    color:rgb(18, 130, 64);
+    font-weight:700;
+    opacity:0.8;
+}
+
+.smart-logo {
+    box-sizing:initial;
+    display:inline-block;
+    background: url(images/smart.jpeg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    position:relative;
+    min-width:30%;
+    height:200px;
+    float:left;
+    padding-right:8%;
+    border-right:solid 1px;
+    border-color:#bcbcbc;
+}
+
+.csr-logo {
+    box-sizing:initial;
+    display:inline-block;
+    background: url(images/csr.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    position:relative;
+    min-width:30%;
+    height:200px;
+    float:left;
+    padding-right:8%;
+    border-right:solid 1px;
+    border-color:#bcbcbc;
+}
+
+.text {
+    display:inline-block;
+    float:right;
+    width:55%;
+    margin-top:1%;
+    padding-right:5%;
+}
+
+.light-green {
+    color: rgb(132, 194, 95);
+}
+
+/*.bottom-circle {
+    position:absolute;
+    width:120px;
+    height:100px;
+    background-color:white;
+    border-radius:50%;
+    display:inline-block;
+    bottom:0px;
+    left:50%;
+    transform: translate(-58px, 88px);
+}*/
+
+.row2 {
+    margin-top:30px;
+}
+
+.fixed-image {
+    background: url(images/cherry-tomatoes.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    position:relative;
+    width:100%;
+    height:295px;
+    margin-top:-10px;
+    z-index: -1;
+}
+
+.fixed-image-text {
+    font-family: 'Lemonada', cursive;
+    position:absolute;
+    bottom:50%;
+    left:50%;
+    color:white;
+    transform: translate(-30px, 0px);
+}
+
+/*0.3-form*/
+
+.contact-form-container {
+    width:100%;
+    max-width:1170px;
+    padding:5px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:80px;
+}
+
+.form-control {
+    height: 60px;
+    border: none;
+    background: #f7f7f7;
+    font-size: 15px;
+    margin-bottom: 30px;
+    background-image: none;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    padding: 6px 12px;
+    padding-left: 15px;
+    width:49%;
+    float:left;
+}
+
+.form-control2 {
+    height: 60px;
+    border: none;
+    background: #f7f7f7;
+    font-size: 15px;
+    margin-bottom: 30px;
+    background-image: none;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    padding: 6px 12px;
+    width:49%;
+    float:right;    
+}
+
+#message {
+    border: none;
+    background: #f7f7f7;
+    font-size: 15px;
+    margin-bottom: 30px;
+    background-image: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    display: block;
+    width: 100%;
+    height:138px;
+}
+
+.btn-green {
+    color: #fff;
+    background: rgb(132, 194, 95);
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 60px;
+    height: 60px;
+    border: none;
+    padding: 0 20px;
+    box-shadow: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
